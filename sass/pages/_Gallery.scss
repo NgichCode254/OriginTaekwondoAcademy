@@ -1,0 +1,119 @@
+@media only screen and (min-width: 0px){
+    main.gallery{
+        margin: 2rem 0 8rem 0;
+        .Gallery-div{
+            margin-top: 7rem;
+
+            a{
+                display: block;
+                position: relative;
+                box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.212);
+
+                .Gallery-div_IMG{
+                    width: 100vw;
+                    height: 27rem;
+                    object-fit: cover !important;
+                }
+                div.Gallery-div_paraDiv{
+                    position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                    height: 100%;
+                    clip-path: polygon(0 220px, 100% 130px, 100% 100%, 0px 100%);
+                    background-image: linear-gradient(to left top , #049882b6, #404a56a7);
+
+                    p{
+                        width: 30rem;
+                        font-size: 1.8rem;
+                        font-family: 'Nunito Sans', sans-serif;
+                        position: absolute;
+                        bottom: 2.6rem;
+                        right: 50%;
+                        transform: translateX(50%);
+                        font-weight: 700;
+                        letter-spacing: 1.5px;
+                        background-image:  linear-gradient(-70deg,#BBD2C5,#6dd5ed);
+                        color: transparent;
+                        -webkit-background-clip: text;
+                        background-clip: text;
+                        text-align: center;
+                        text-transform: uppercase;
+                        text-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 320px){
+    main.gallery{
+        margin: 6rem 0 9rem 0;
+        .Gallery-div{
+            margin-top: 9rem;
+
+            a{
+                .Gallery-div_IMG{
+                    height: 28rem;
+                }
+                div.Gallery-div_paraDiv{
+                    clip-path: polygon(0 220px, 100% 150px, 100% 100%, 0px 100%);
+                    p{
+                        width: 30rem;
+                        font-size: 2rem;
+                        bottom: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 460px){
+    main.gallery{
+        margin: 3rem 0 9rem 0;
+
+        .Gallery-div{
+            margin-top: 9rem;
+            width: 46rem;
+            margin-left: auto;
+            margin-right: auto;
+
+            a{
+                .Gallery-div_IMG{
+                    height: 32rem;
+                    width: 100%;
+                }
+                div.Gallery-div_paraDiv{
+
+                    p{
+                        width: 35rem;
+                        font-size: 2.3rem;
+                        bottom: 4rem;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 1050px){
+    main.gallery{
+        margin: 0 0 11rem 0;
+        width: 102rem;
+        margin-left: auto;
+        margin-right: auto;
+
+        .Gallery-div{
+            display: inline-block;
+            margin-left: 3rem;
+        }
+    }
+}
+@media only screen and (min-width: 1300px){
+    main.gallery{
+        width: 120rem;
+
+        .Gallery-div{
+            display: inline-block;
+            margin-left: 9.5rem;
+        }
+    }
+}

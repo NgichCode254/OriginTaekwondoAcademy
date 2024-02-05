@@ -1,0 +1,289 @@
+*{
+    margin: 0;
+    padding-top: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.footer{
+    height: 28rem;
+    font-family: 'Poopins', sans-serif;
+    background-image: linear-gradient(to left top , #049882, #404a56);
+    position: relative;
+}
+.footer .logo_footer{
+    width: 12rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 18rem;
+    transform: translate(-50%,-50%);
+} 
+.footer .footer-logo_text{
+    font-size: 21px;
+    color: floralwhite;
+    position: absolute;
+    top: 43%;
+    left: 26rem;
+    background-image:  linear-gradient(-70deg,#BBD2C5,#6dd5ed);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow:0 1.5rem 2rem rgba(0, 0, 0, .4);
+    transition: all 0.1s ease-out;
+
+}
+.footer .footer-logo_text:focus, .footer .footer-logo_text:hover{
+    text-shadow:0 1.5rem 2rem rgba(0, 0, 0, .5);
+}
+.footer .footer-logo_text:active{
+    transform: translateY(3px);
+}
+
+.nav-link-footer{
+    width: 15rem;
+    font-size: 1.6rem;
+    position: absolute;
+    top: 50%;
+    left: 43%;
+    transform: translateY(-50%);
+}
+.nav-link-footer a{
+    display: block;
+    color: floralwhite;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all 0.3s ease;
+}
+.nav-link-footer a:not(:last-child){
+    margin-bottom: 0.7rem;
+}
+.footer .address-academy{
+    list-style: none;
+    font-size: 1.6rem;
+    position: absolute;
+    top: 47%;
+    left: 52%;
+    transform: translateY(-50%);
+}
+.footer .address-academy li{
+    transition: all 0.3s ease;
+}
+
+.footer .address-academy li a{
+    text-decoration: none;
+    color: floralwhite;
+    text-decoration: none;
+    line-height: 1.4;
+    text-transform: capitalize;
+}
+.nav-link-footer a:hover, .footer .address-academy li:hover, .nav-link-footer a:focus, .footer .address-academy li:focus{
+    color: #ffffffff;
+    padding-left: 8px;
+}
+.footer .social-links{
+    position: absolute;
+    top: 30%;
+    right: 10rem;
+}
+.footer .social-links a {
+    font-size: 3.5rem;
+    display: inline-block;
+    cursor: pointer;
+    color: rgb(218, 216, 216);
+}
+.footer .social-links a:not(:last-child){
+    margin-right: 1.3rem;
+}
+/* .footer .social-links i:hover{
+} */
+.footer .social-links .fa-facebook:hover{
+    background-color: #fff;
+    border-radius: 60%;
+    color: #4267B2;
+}
+.footer .social-links .fa-twitter:hover{
+    color: #00ACEE;
+}
+.footer .social-links .fa-instagram:hover{
+    background-image: linear-gradient(to right bottom, #8a3ab9, #fccc63, #fbad50, #cd486b);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.footer .social-links .fa-youtube:hover{
+    color: #C4302B;
+}
+.footer .social-links a:active{
+    transform: translateY(3px);
+}
+
+@media only screen and (max-width: 1237px){
+    .footer .logo_footer{
+        width: 11rem;
+        left: 15rem;
+    }
+    .footer .footer-logo_text{
+        font-size: 19px;
+        top: 41%;
+        left: 22rem;
+    }
+    .nav-link-footer{
+        font-size: 1.4rem;
+    }
+    .footer .address-academy{
+        font-size: 1.4rem;
+    }
+    .footer .social-links a{
+        font-size: 3.3rem;
+    }
+    .footer .social-links a:not(:last-child){
+        margin-right: .5rem;
+    }
+}
+@media only screen and (max-width: 1070px){
+    .footer{
+        height: 24rem;
+    }
+    .footer .logo_footer{
+        width: 10rem !important;
+        left: 12.5rem;
+    }
+    .footer .footer-logo_text{
+        font-size: 18px;
+        top: 43%;
+        left: 19rem;
+    }
+    .nav-link-footer{
+        font-size: 1.2rem;
+        left: 46%;
+    }
+    .footer .address-academy{
+        font-size: 1.2rem;
+        left: 54%;
+    }
+    .footer .social-links a{
+        font-size: 3rem;
+    }
+    .footer .social-links a:not(:last-child){
+        margin-right: .5rem;
+    }
+}
+@media only screen and (max-width: 910px){
+    .footer{
+        height: 24rem;
+    }
+    .footer .logo_footer{
+        width: 8.5rem !important;
+        left: 12.5rem;
+    }
+    .footer .footer-logo_text{
+        font-size: 16px;
+        top: 43%;
+        left: 18rem;
+    }
+    .nav-link-footer{
+        display: none;
+    }
+    .footer .address-academy{
+        font-size: 1.2rem;
+        left: 47%;
+        top: 51%;
+    }
+    .footer .social-links{
+        top: 40%;
+    }
+}
+@media only screen and (max-width: 830px){
+    .footer{
+        height: 20rem;
+    }
+    .footer .logo_footer{
+        width: 8.5rem !important;
+        left: 13.5rem;
+    }
+    .footer .footer-logo_text{
+        left: 19rem;
+        top: 40%;
+    }
+    .nav-link-footer{
+        display: none;
+    }
+    .footer .address-academy{
+        display: none;
+    }
+    .footer .social-links a:not(:last-child){
+        margin-right: 1.3rem;
+    }
+}
+@media only screen and (max-width: 675px){
+    .footer{
+        height: 13rem;
+    }
+    .footer .logo_footer{
+        width: 7rem !important;
+        left: 12rem;
+    }
+    .footer .footer-logo_text{
+        font-size: 14px;
+        left: 16.5rem;
+        top: 40%;
+    }
+    .footer .social-links a{
+        font-size: 2.3rem;
+    }
+    .footer .social-links a:not(:last-child){
+        margin-right: .3rem;
+    }
+}
+@media only screen and (max-width: 545px){
+    .footer{
+        height: 11rem;
+    }
+    .footer .logo_footer{
+        width: 5rem !important;
+        left: 8rem;
+    }
+    .footer .footer-logo_text{
+        font-size: 13px;
+        left: 11.5rem;
+        top: 37%;
+    }
+    .footer .social-links{
+        right: 6rem;
+    }
+    .footer .social-links a{
+        font-size: 2rem;
+    }
+}
+@media only screen and (max-width: 430px){
+    .footer{
+        height: 15rem;
+    }
+    .footer .logo_footer{
+        width: 6.5rem !important;
+        left: 25%;
+        top: 30%;
+    }
+    .footer .footer-logo_text{
+        font-size: 14px;
+        left: 39%;
+        top: 20%;
+    }
+    .footer .social-links{
+        left: 50%;
+        top: 60%;
+        transform: translateX(-18%) !important;
+    }
+    .footer .social-links a{
+        font-size: 2.3rem;
+    }
+    .footer .social-links{
+        width: 40rem;
+    }
+    .footer .social-links a:not(:last-child){
+        margin-right: 1.2rem;
+    }
+}

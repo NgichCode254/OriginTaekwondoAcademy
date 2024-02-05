@@ -1,0 +1,246 @@
+@media only screen and (min-width: 0px){
+    .event{
+        margin-bottom: 6rem;
+
+        .half-width{
+            display: inline-block;
+            width: 100%;
+            h2{
+                font-size: 6.5vw;
+                margin-bottom: 2rem;
+            }
+
+            p{
+                padding: 0 2rem;
+                margin-top: 4rem;
+                line-height: 2;
+                color: rgb(72, 72, 72);
+                font-family: 'Roboto', sans-serif;
+                font-size: 4vw;
+                margin-bottom: 2rem;
+            }
+            .moreImages{
+                text-decoration: none;
+                color: rgb(116, 67, 194);
+                border-bottom: 2px solid rgb(116, 67, 194);
+                margin: 0 auto 2rem 2rem;
+                font-size: 1.3rem;
+
+                &:active{
+                    transform: translateY(1px);
+                    box-shadow: 0.3rem 0.7rem 0.8rem rgba(#000, .4);
+                }
+            }
+            .event-img > .img {
+                width: 90vw;
+                display: block;
+                margin: 0 auto 1rem auto;
+                
+                height: 17rem;
+                object-fit: cover;
+            }
+            .event-img > .img:first-child{
+                margin-top: 3rem;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 380px){
+    .event{
+
+        .half-width{
+            h2{
+                font-size: 2.7rem;
+            }
+
+            p{
+                font-size: 2rem;
+                padding: 4rem;
+            }
+            .event-img > .img {
+                width: 75%;
+                height: 18rem;
+                object-fit: cover;
+            }
+            .moreImages{
+                margin: 0 auto 2rem 4rem;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 545px){
+    .event{
+
+        .half-width{
+            h2{
+                font-size: 2.7rem;
+            }
+            p{
+                font-size: 2rem;
+                padding: 4rem;
+            }
+            .moreImages{
+                margin: 0 auto 2rem 4rem;
+            }
+
+            .event-img{
+                padding: 0 ;
+                display: block;
+                margin: 10rem auto;
+                width: 48.5rem;
+                
+                
+                .img{
+                    width: 23rem;
+                    display: inline-block;
+                    margin: 0 !important;
+                    padding: 0%;
+
+                    height: 17rem;
+                    object-fit: cover;
+
+                    &-3{
+                        display: none;
+                    }
+                }
+            }
+            .event-img >.img:first-child{
+                margin-right: 1.3rem !important;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 747px){
+    .event{
+        .half-width{
+            .event-img{
+                padding: 0;
+                display: block;
+                margin: 10rem auto;
+                width: 70rem;
+            }
+            .event-img > .img {
+                width: 22rem;
+                display: inline-block;
+                margin: 0 !important;
+                height: 17rem;
+                object-fit: cover;
+                &-3{
+                    display: inline-block;
+                }
+            }
+            .event-img > .img:not(:last-child){
+                margin-right: 1.3rem !important;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 1100px){
+    .events{
+        display: block;
+        width: 82%;
+        margin: 0 auto;
+    }
+    .event{
+        margin-bottom: 20rem;
+        display: flex;
+
+        .half-width{
+            flex: 1;
+        }
+        &:not(:last-child){
+            border-bottom: 1px solid rgb(138, 136, 136);
+            padding-bottom: 20rem;
+        }
+
+        .event-left{
+            width: 50%;
+            margin-right: 8vw;
+
+            h2{
+                font-size: 3rem;
+                margin-bottom: 6rem;
+                padding: 0 3rem;
+            }
+
+            p{
+                padding: 0 3vw;
+                margin-top: 4rem;
+                line-height: 2;
+                color: rgb(72, 72, 72);
+                font-family: 'Roboto', sans-serif;
+                font-size: 2rem;
+                margin-bottom: 4rem;
+            }
+            .moreImages{
+                text-decoration: none;
+                color: rgb(116, 67, 194);
+                border-bottom: 2px solid rgb(116, 67, 194);
+                margin: 0 auto 2rem 3vw;
+                font-size: 1.6rem;
+
+                &:hover,&:focus{
+                    background-image: linear-gradient(-20deg, #00c7a9, #313b47);
+                    color: floralwhite;
+                    border: none;
+                }
+                &:active{
+                    transform: translateY(1px);
+                    box-shadow: 0.3rem 0.7rem 0.8rem rgba(#000, .4);
+                }
+            }
+        }
+        
+        .event-right{
+
+            width: 35%;
+            margin-left: 3rem;
+
+            .event-img{
+                position: relative; 
+                margin-top: 8rem;
+                margin-left: 3rem;          
+
+                & > .img {
+                    width: 24rem;
+                    height: 17rem;
+                    object-fit: cover;
+
+                    display: block;
+                    margin: 0% !important;
+                    padding: 0%;
+                    position: absolute;
+                    z-index: 10;
+                    transition: all .2s;
+                    border: 1px solid  rgba(255, 255, 255, 0.253);
+                    box-shadow: 0 0 1.2rem rgba(#000, .6);
+
+                    &-1{
+                        top: 3rem;
+                        left: 0rem;
+                    }
+                    &-2{
+                        top: 7rem;
+                        left: 19rem;
+                    }
+                    &-3{
+                        top: 14rem;
+                        left: 12%;
+                    }
+                    &:hover{
+                        transform: scale(1.05) translateY(-.5rem);
+                        outline-offset: 1.4rem;
+                        z-index: 20;
+                        outline: 1rem solid #1f746e;
+
+                    }
+                
+                }
+                
+                &:hover .img:not(:hover){
+                    transform: scale(0.9);
+                }
+            }
+        }
+    }
+}

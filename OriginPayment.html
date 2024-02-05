@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Origin Taekwondo Academy</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <h1>Origin Taekwondo Academy</h1>
+    <div id="payment">
+        <form id="paymentForm">
+            <label for="coursePackage">Select Course Package:</label>
+            <select id="coursePackage" name="coursePackage">
+                <option value="bronze">Bronze - $3</option>
+                <option value="silver">Silver - $5</option>
+                <option value="gold">Gold - $10</option>
+            </select>
+            <button type="button" onclick="initiatePayment()">Pay Now</button>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+        function initiatePayment() {
+            // Get selected course package
+            var selectedPackage = document.getElementById("coursePackage").value;
+
+            // Calculate amount based on the selected package
+            var amount = 0;
+            switch (selectedPackage) {
+                case "bronze":
+                    amount = 3;
+                    break;
+                case "silver":
+                    amount = 5;
+                    break;
+                case "gold":
+                    amount = 10;
+                    break;
+                default:
+                    // Handle default case or "Free" package if needed
+                    break;
+            }
+
+            // Replace these with your actual Daraja API credentials
+            const darajaApiUrl = 'https://sandbox.safaricom.co.ke/daraja/path/to/endpoint';
+            const consumerKey = 'SAcR3XMTATL28s9FlS38E6AQ8DFplPzR1apwldq4cieEh91C';
+            const consumerSecret = '28G1Zxt1HASf5OQKFI8G9lLRJrpVmAGcBXICqSZ0I2FLggrSAWdfq6fvV81NN8JR';
+
+            // Use axios to make an authenticated request to Daraja API
+            axios({
+                method: 'post',
+                url:lhttps://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials,
+                headers: {
+                    'Authorization': `Basic ${btoa(`${SAcR3XMTATL28s9FlS38E6AQ8DFplPzR1apwldq4cieEh91C}:${28G1Zxt1HASf5OQKFI8G9lLRJrpVmAGcBXICqSZ0I2FLggrSAWdfq6fvV81NN8JR}`)}`,
+                    'Content-Type': 'application/json',
+                },
+                data: {
+                    // Include necessary parameters for Daraja API
+                    amount: amount,
+                    package: selectedPackage,
+                    // Add any additional parameters needed
+                },
+            })
+                .then(function (response) {
+                    // Handle the Daraja API response
+                    console.log('Daraja API Response:', response.data);
+                    // You may want to redirect the user to a payment URL or show a success message
+                })
+                .catch(function (error) {
+                    // Handle errors from the Daraja API
+                    console.error('Error making Daraja API request:', error.message);
+                    // You may want to show an error message to the user
+                });
+        }
+    </script>
+</body>
+
+</html>
